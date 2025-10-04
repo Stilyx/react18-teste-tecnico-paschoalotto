@@ -8,6 +8,18 @@ const nextConfig: NextConfig = {
 				protocol: 'https',
 				hostname: 'avatars.githubusercontent.com',
 			},
+			{
+				protocol: 'https',
+				hostname: 'i.annihil.us',
+				port: '',
+				pathname: '/**',
+			},
+			{
+				protocol: 'http',
+				hostname: 'i.annihil.us',
+				port: '',
+				pathname: '/**',
+			},
 		],
 	},
 };
