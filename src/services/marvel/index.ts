@@ -12,19 +12,30 @@ export const getAllMarvelCharacters = async (offset: number) => {
 	}
 };
 
-export const getMarvelCharactersName = async (name: string) => {
+export const getMarvelCharactersName = async (
+	name: string,
+	offset = 0,
+	limit = 20
+) => {
 	try {
-		const response = await instance.get(`/characters?&nameStartsWith=${name}`);
+		const response = await instance.get(`/characters`, {
+			params: {
+				nameStartsWith: name,
+				offset,
+				limit,
+			},
+		});
 		return response.data;
 	} catch (error) {
 		console.error('Error fetching Marvel characters with pagination:', error);
 		throw error;
 	}
 };
-
 export const getMarvelCharacterInfo = async (name: string) => {
 	try {
 		const response = await instance.get(`/characters?name=${name}`);
 		return response.data;
-	} catch (error) {}
+	} catch (error) {
+		console.log(error);
+	}
 };
