@@ -55,8 +55,8 @@ export default function FeatureRenderChar({ characters }: IRenderChar) {
 								src={`${character.thumbnail.path}.${character.thumbnail.extension}`}
 								alt={`${character.name} thumbnail`}
 								width={200}
-								height={200}
-								className="w-[12.5rem] h-[12.5rem] border border-marvel-dark-border object-cover rounded"
+								height={500}
+								className="w-[12.5rem] h-[20.5rem] border border-marvel-dark-border object-cover rounded"
 							/>
 						</div>
 					) : (
@@ -64,8 +64,8 @@ export default function FeatureRenderChar({ characters }: IRenderChar) {
 							src={chartNotFound}
 							alt={`${character.name} thumbnail`}
 							width={200}
-							height={200}
-							className="w-[12.5rem] h-[12.5rem] border border-marvel-dark-border object-cover rounded hover:scale-[1.1] duration-400"
+							height={500}
+							className="w-[12.5rem] h-[20.5rem] border border-marvel-dark-border object-cover rounded hover:scale-[1.1] duration-400"
 						/>
 					)}
 					<p className="absolute top-[-0.938rem] self-center bg-red-500 text-white skew-x-[-20deg] w-[10.625rem] duration-200 group-hover:rotate-2 text-center">
