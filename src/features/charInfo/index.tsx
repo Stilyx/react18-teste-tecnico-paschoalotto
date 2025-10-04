@@ -42,13 +42,13 @@ export default function FeatureCharInfo({ charInfo }: ICharInfo) {
 					classname="bg-yellow-500"
 				/>
 			</div>
-			<div className="absolute bottom-5 w-[90%] border-5 skew-x-[3deg] border-black p-8 rounded-[30px] bg-[#f6f8fa] h-[240px]">
+			<div className="absolute bottom-5 w-[90%] border-5 skew-x-[3deg] border-black p-8 rounded-[30px] bg-[#f6f8fa] h-[240px] items-center justify-center flex">
 				<div className=" flex-col   items-center justify-center bg-black text-[18px] h-[50px] w-fit  border-4 border-white/20 skew-x-[10deg] p-1  flex shadow-[8px_8px_0px_rgba(0,0,0,1)] place-items-center absolute right-5 top-[-30px]">
 					<h1 className="font-comic text-[25px] text-white">
 						{charInfo?.name}
 					</h1>
 				</div>
-				<p className="text-[16px] justify-center text-justify font-bold">
+				<p className="text-[10px] desktop:text-[16px] justify-center text-justify font-bold">
 					{charInfo?.description}
 				</p>
 			</div>
