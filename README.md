@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+  <h2> Sobre </h2>  
+ 
+  <h3 >Teste técnico para a vaga de Desenvolvedor Frontend</h3> 
+  
+  <h3> O Projeto possui as seguintes páginas:</h3> 
+  
+  - home "/"
+```
+- Página inicial do site, ao entrar você será redirecionado para esta página.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- A tela possui dois ícones com interações, responsáveis por dar acesso tanto à página
+do buscador do GitHub quanto à listagem dos personagens da Marvel.
+```
+ 
+ 
+  - Buscador Github "/github"
+```
+- A página do GitHub permite que o usuário pesquise, por
+meio da API do GitHub, informações sobre usuários registrados na plataforma.
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+  - Lista de Personagens Marvel "/marvel"
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+- Página que exibe todos os personagens, organizados em páginas;
 
-## Learn More
+- Permite pesquisar personagens pelo nome usando a barra de busca;
 
-To learn more about Next.js, take a look at the following resources:
+- Ao clicar em um personagem, são exibidas informações adicionais sobre ele;
+```
+    
+  
+  <div>
+  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+ 
+  
+  <h2> Tecnologias Utilizadas </h2>
+  
+ - <p>NextJs</p>
+ - <p>Typescript</p>
+ - <p>Tailwind</p>
+ - <p>Shadcn Pagination</p>
+ - <p>Axios</p>
+ - <p>MD5</p>
+ - <p>React Icons</p>
+ - <p>React Hook Form</p>
+ - <p>Zod</p>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+  
+ </div 
+  
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<h2> Configuração para uso do projeto </h2>
+
+```
+# Para clonar
+$ git clone https://github.com/Stilyx/react18-teste-tecnico-paschoalotto.git
+
+# Para instalar todas as dependencias do projeto
+$ yarn install || npm install
+
+# Para iniciar o servidor local em seu equipamento
+$ yarn dev || npm run dev
+```
