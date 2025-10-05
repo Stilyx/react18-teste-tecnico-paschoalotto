@@ -6,7 +6,7 @@ import { notFoundCharacter } from '@/hooks/notfoundchar';
 
 export default function FeatureCharInfo({ charInfo }: ICharInfo) {
 	return (
-		<div className="flex flex-col gap-4">
+		<div className="flex flex-col gap-4 font-comic ">
 			<div className="absolute rounded-[0.625rem] inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(0,0,0,0.9)_0%,_rgba(0,0,0,9.9)_100%)]"></div>
 			{!notFoundCharacter(charInfo!.thumbnail.path) ? (
 				<Image
@@ -49,7 +49,9 @@ export default function FeatureCharInfo({ charInfo }: ICharInfo) {
 					</h1>
 				</div>
 				<p className="text-[10px] desktop:text-[16px] justify-center text-justify font-bold">
-					{charInfo?.description}
+					{charInfo?.description.length === 0
+						? 'No description found for this character'
+						: charInfo?.description}
 				</p>
 			</div>
 		</div>

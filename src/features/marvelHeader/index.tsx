@@ -14,7 +14,7 @@ export default function FeatureMarvelHeader() {
 				<Link href={'/'}>
 					<IoMdReturnLeft className="desktop:text-[1.6rem] text-[1.25rem] cursor-pointer text-white " />
 				</Link>
-				<h1 className=" dark:text-MARVEL-dark-text font-condensed text-[0.9rem] desktop:text-[1.8rem] bg-red-500 text-white px-2 skew-x-[-20deg]">
+				<h1 className=" dark:text-MARVEL-dark-text font-bold font-condensed text-[0.9rem] desktop:text-[1.8rem] bg-red-500 text-white px-2 skew-x-[-20deg]">
 					MARVEL CHARACTERS
 				</h1>
 			</div>

@@ -18,7 +18,7 @@ export default function FeatureSelectPage() {
 				className="bg-gray-200 w-[50%] h-screen items-center justify-center flex flex-col gap-10 cursor-pointer hover:w-[60%]  duration-300 transition-all"
 				onClick={() => router.push('/marvel')}
 			>
-				<h1 className="bg-red-500 desktop:text-[7rem] text-[2.5rem] text-white skew-x-[-20deg]">
+				<h1 className="bg-red-500 desktop:text-[7rem] text-[2.5rem] text-white skew-x-[-20deg] font-bold">
 					MARVEL
 				</h1>
 			</div>

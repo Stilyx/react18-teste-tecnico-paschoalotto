@@ -43,7 +43,7 @@ export default function GithubSearchCard() {
 
 				<input
 					type="text"
-					placeholder="Digite o Usuário"
+					placeholder="Enter User"
 					className="w-full pl-[3.125rem] p-[1.25rem] border rounded-[1.25rem] border-github-dark-border shadow-2xs focus:outline-none font-spacemono text-github-light-text dark:text-github-dark-text dark:border-github-light-border bg-github-light-card-background dark:bg-github-dark-card-background"
 					{...register('name')}
 				/>
@@ -88,11 +88,11 @@ export default function GithubSearchCard() {
 							{userData?.bio}
 						</p>
 						<div className="flex desktop:flex-row flex-col desktop:justify-between gap-10 items-center  justify-center w-full desktop:items-end  h-full">
-							<div className="gap-10 flex flex-col rounded-[0.375rem] shadow-xl p-6 bg-github-light-background dark:bg-github-dark-background desktop:w-fit w-full desktop:flex-row">
-								<UserStatsCard title="SEGUINDO" value={userData.following} />
-								<UserStatsCard title="SEGUIDORES" value={userData.followers} />
+							<div className="gap-10 flex flex-col rounded-[0.375rem] shadow-xl p-6 bg-github-light-background dark:bg-github-dark-background desktop:w-fit px-[3.125rem] w-full desktop:flex-row">
+								<UserStatsCard title="FOLLOWING" value={userData.following} />
+								<UserStatsCard title="FOLLOWERS" value={userData.followers} />
 								<UserStatsCard
-									title="REPOSiTÓRIOS"
+									title="REPOSITORIES"
 									value={userData.public_repos}
 								/>
 							</div>

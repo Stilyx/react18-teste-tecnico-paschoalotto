@@ -33,7 +33,7 @@ export default function FeatureCharList() {
 			<div className="desktop:w-[25rem] ml-[3.125rem] w-[80%] relative mb-[3.125rem]">
 				<input
 					type="text"
-					placeholder="Nome do Herói"
+					placeholder="Character Name"
 					className="w-full pl-[3.125rem] p-[1.25rem] border skew-x-[-20deg] border-marvel-dark-border shadow-2xs focus:outline-none font-condensed text-marvel-light-text dark:text-marvel-dark-text dark:border-marvel-light-border bg-marvel-light-card-background dark:bg-marvel-dark-card-background"
 					onChange={handleFilterChar}
 					value={filter}
